@@ -1,6 +1,14 @@
 :root {
-    --header-height: 150px;
+    --header-height: 92px;
     --footer-height: 80px;
+}
+
+@media screen and (min-width: 576px) {
+    :root {
+        --title-height: 92px;
+        --header-height: 142px;
+        --footer-height: 80px;
+    }
 }
 
 @keyframes bg-bigsized-word-effect {
@@ -95,24 +103,30 @@ header {
     font-family: Caveat;
     font-size: 40px;
     margin-bottom: -0.733cm;
-    /* margin-left: 30px; */
 }
 
 #title2 {
     font-family: Mitr;
     font-size: 50px;
     color: #0a8672;
+    margin-bottom: -10px;
+}
+
+.menu-button {
+    font-size: 40px;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 0 12px;
+    margin-right: 10px;
+    border-radius: 20px;
 }
 
 .right-nav {
     font-family: 'Baloo Chettan 2';
+    position: fixed;
+    top: 10px;
+    right: 0;
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
-    align-content: flex-start;
-    flex-wrap: wrap;
-    position: sticky;
-    padding-right: 30px;
+    justify-content: right;
 }
 
 .btn-wrapper {
@@ -121,7 +135,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: left;
+    display: none;
 }
 
 /* navbar menu highlight */
@@ -141,34 +155,12 @@ header {
     color: rgb(176, 192, 194);
     text-align: center;
     transition: color 0.5s 0.1s;
-    
 }
 
 /* current menu */
 .cur_category {
     color: rgb(71, 119, 117);
     font-weight: 900;
-}
-
-/* animation effect after page is loaded */
-.btn-wrapper:nth-child(1) .string {
-    animation: menu-effect-string 0.4s linear 3s;
-}
-
-.btn-wrapper:nth-child(2) .string {
-    animation: menu-effect-string 0.4s linear 3.05s;
-}
-
-.btn-wrapper:nth-child(3) .string {
-    animation: menu-effect-string 0.4s linear 3.1s;
-}
-
-.btn-wrapper:nth-child(4) .string {
-    animation: menu-effect-string 0.4s linear 3.15s;
-}
-
-.btn-wrapper:nth-child(5) .string {
-    animation: menu-effect-string 0.4s linear 3.2s;
 }
 
 /* animation effect when hover over the menu */
@@ -181,12 +173,59 @@ header {
     color: white;
 }
 
+@media screen and (min-width: 576px) {
+    .menu-button {
+        display: none;
+    }
+
+    .right-nav {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        align-content: flex-start;
+        flex-wrap: wrap;
+        position: sticky;
+        padding-right: 30px;
+    }
+
+    .right-nav {
+        position: block;
+        top: inherit;
+        right: inherit;
+    }
+
+    .btn-wrapper {
+        display: flex;
+    }
+    
+    /* animation effect after page is loaded */
+    .btn-wrapper:nth-child(1) .string {
+        animation: menu-effect-string 0.4s linear 3s;
+    }
+
+    .btn-wrapper:nth-child(2) .string {
+        animation: menu-effect-string 0.4s linear 3.05s;
+    }
+
+    .btn-wrapper:nth-child(3) .string {
+        animation: menu-effect-string 0.4s linear 3.1s;
+    }
+
+    .btn-wrapper:nth-child(4) .string {
+        animation: menu-effect-string 0.4s linear 3.15s;
+    }
+
+    .btn-wrapper:nth-child(5) .string {
+        animation: menu-effect-string 0.4s linear 3.2s;
+    }
+}
+
 /* big word grid area setting */
 main {
     position: fixed;
     top: var(--header-height);
     display: grid;
-    grid-template-columns: minmax(10vw, 30vw) max-content 1fr;
+    grid-template-columns: minmax(10vw, 30vw) max-content;
     grid-template-rows: 1fr min-content 2em;
     height: calc(100vh - var(--header-height) - var(--footer-height));
 }
@@ -203,7 +242,7 @@ main div {
 }
 
 #bg-big-word {
-    font-size: calc(5rem + 20vw);
+    font-size: calc(5rem + 10vw);
     color: #A1A48C;
     margin-left: -0.16em;
     align-self: flex-end;
@@ -212,7 +251,7 @@ main div {
 }
 
 #bg-mid-word {
-    font-size: calc(5rem + 10vw);
+    font-size: calc(5rem + 5vw);
     color: #E5E1D5;
     margin-left: -0.07em;
     align-self: flex-end;
@@ -220,9 +259,15 @@ main div {
     animation: bg-midsized-word-effect 3s 1;
 }
 
-
-
-
+@media screen and (min-width: 576px) {
+    #bg-big-word {
+        font-size: calc(5rem + 20vw);
+    }
+    
+    #bg-mid-word {
+        font-size: calc(5rem + 10vw);
+    }
+}
 
 .links-icon {
     margin: 10px;
