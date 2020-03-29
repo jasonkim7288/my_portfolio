@@ -1,6 +1,8 @@
 :root {
-    --header-height: 92px;
+    /* --header-height: 92px; */
+    --header-height: 142px;
     --footer-height: 80px;
+    --color: rgb(176, 192, 194);
 }
 
 @media screen and (min-width: 576px) {
@@ -74,6 +76,10 @@ html {
     color: #b0c0c2;
 }
 
+a {
+    text-decoration: none;
+}
+
 .bg-color {
     background: #333735;
 }
@@ -112,92 +118,107 @@ header {
     margin-bottom: -10px;
 }
 
-.menu-button {
-    font-size: 40px;
-    background-color: rgba(0, 0, 0, 0.4);
-    padding: 0 12px;
-    margin-right: 10px;
-    border-radius: 20px;
-}
-
 .right-nav {
     font-family: 'Baloo Chettan 2';
-    position: fixed;
-    top: 10px;
-    right: 0;
     display: flex;
-    justify-content: right;
+    justify-content: space-around;
+    align-items: flex-start;
 }
 
 .btn-wrapper {
     height: 50px;
-    margin: 0 10px;
+    margin: 0 2px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    display: none;
 }
 
-/* navbar menu highlight */
-.painting {
-    width: 0;
-    height: 5px;
-    background-color: rgb(71, 119, 117);
-    border-radius: 3px;
-    transition: width 0.5s 0.1s;
+.hover-wrapper {
+    position: absolute;
+    height: 50px;
+    background: rgba(255, 255, 255, 0);
+    border-radius: 5px;
+    transform: scale(1.2);
+    transition: all 1s;
+}
+
+.hover-wrapper:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.2);
+}
+
+.hover-wrapper:hover + .menu-icon {
+    color: white;
+}
+
+.menu-icon {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 25px;
+    /* color: #b0c0c2 */
+    color: var(--color);
 }
 
 /* navbar menu string */
 .string {
     width: 100%;
-    padding: 5px;
-    font-size: 1.2em;
-    color: rgb(176, 192, 194);
+    font-size: 0.9em;
+    /* color: rgb(176, 192, 194); */
+    color: var(--color);
     text-align: center;
-    transition: color 0.5s 0.1s;
-}
-
-/* current menu */
-.cur_category {
-    color: rgb(71, 119, 117);
-    font-weight: 900;
-}
-
-/* animation effect when hover over the menu */
-.string:hover + .painting {
-    width: 100%;
-    background-color: rgb(71, 119, 117);
-}
-
-.string:hover {
-    color: white;
 }
 
 @media screen and (min-width: 576px) {
-    .menu-button {
-        display: none;
-    }
-
     .right-nav {
+        font-family: 'Baloo Chettan 2';
         display: flex;
         justify-content: flex-end;
         align-items: flex-start;
-        align-content: flex-start;
-        flex-wrap: wrap;
-        position: sticky;
         padding-right: 30px;
     }
-
-    .right-nav {
-        position: block;
-        top: inherit;
-        right: inherit;
+  
+    .btn-wrapper {
+        margin: 0 10px;
     }
 
-    .btn-wrapper {
-        display: flex;
+    .hover-wrapper {
+        display: none;
     }
     
+    .menu-icon {
+        display: none;
+    }
+
+    .string {
+        width: 100%;
+        padding: 5px;
+        font-size: 1.2em;
+        /* color: rgb(176, 192, 194); */
+        color: var(--color);
+        text-align: center;
+        transition: color 0.5s 0.1s;
+    }
+    /* navbar menu highlight */
+    .painting {
+        width: 0;
+        height: 5px;
+        background-color: rgb(71, 119, 117);
+        border-radius: 3px;
+        transition: width 0.5s 0.1s;
+        transform: translateY(-5px);
+    }
+
+    .string:hover {
+        color: white;
+    }
+    
+    /* animation effect when hover over the menu */
+    .string:hover + .painting {
+        width: 100%;
+        background-color: rgb(71, 119, 117);
+    }
+
     /* animation effect after page is loaded */
     .btn-wrapper:nth-child(1) .string {
         animation: menu-effect-string 0.4s linear 3s;
@@ -220,8 +241,14 @@ header {
     }
 }
 
+/* current menu */
+.cur-category {
+    color: aqua;
+    font-weight: 900;
+}
+
 /* big word grid area setting */
-main {
+aside {
     position: fixed;
     top: var(--header-height);
     display: grid;
@@ -230,16 +257,17 @@ main {
     height: calc(100vh - var(--header-height) - var(--footer-height));
 }
 
-main h1 {
+aside h1 {
     letter-spacing: -0.04em;
     display: contents;
 }
 
-main div {
+aside div {
     font-weight: 500;
     font-size: 1.1rem;
     display: block;
 }
+
 
 #bg-big-word {
     font-size: calc(5rem + 10vw);
@@ -259,6 +287,10 @@ main div {
     animation: bg-midsized-word-effect 3s 1;
 }
 
+.links-icon {
+    margin: 5px;
+}
+
 @media screen and (min-width: 576px) {
     #bg-big-word {
         font-size: calc(5rem + 20vw);
@@ -267,10 +299,10 @@ main div {
     #bg-mid-word {
         font-size: calc(5rem + 10vw);
     }
-}
 
-.links-icon {
-    margin: 10px;
+    .links-icon {
+        margin: 30px;
+    }
 }
 
 .links-icon-background {
@@ -304,6 +336,11 @@ main div {
     transform: translateY(-3px);
 }
 
+#skills {
+    order: 2;
+    background-color: white;
+}
+
 .skill {
     display: flex;
     align-items: center;
@@ -327,11 +364,16 @@ main div {
 }
 
 .percent_word {
+    font-size: 27px;;
     display: inline-block;
     position: relative;
     width: 500px;
-    color: red;
+    color: white;
     text-align: end;
+    background-image: url("res/walk.gif");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
     animation: progress-bar 5s;
 }
 
@@ -372,4 +414,7 @@ footer {
     align-items: center;
 }
 
+p {
+    width: 100vw;
+}
 
