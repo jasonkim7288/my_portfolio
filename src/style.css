@@ -31,7 +31,8 @@
         opacity: 0;
     }
 
-    70%, 100% {
+    70%,
+    100% {
         transform: translateY(0) scale(1);
         opacity: 1;
     }
@@ -45,7 +46,8 @@
         opacity: 0;
     }
 
-    70%, 100% {
+    70%,
+    100% {
         transform: translateX(0) scale(1);
         opacity: 1;
     }
@@ -241,6 +243,7 @@ aside {
     grid-template-columns: minmax(10vw, 30vw) max-content;
     grid-template-rows: 1fr min-content 2em;
     height: calc(100vh - var(--header-height) - var(--footer-height));
+    z-index: -1;
 }
 
 aside h1 {
@@ -361,6 +364,7 @@ article p {
     font-weight: 100;
 
 }
+
 .post img {
     align-self: center;
     max-width: 100%;
@@ -524,7 +528,7 @@ article p {
     border-radius: 50%;
     font-size: 25px;
     padding-left: 12px;
-    color: rgb(0, 204, 204);
+    color: #00cccc;
     display: flex;
     align-items: center;
     transform: scale(1);
@@ -622,7 +626,7 @@ footer {
     width: calc(100vw - 20px);
     height: var(--footer-height);
     justify-content: center;
-    
+
 }
 
 .flexible-footer {
@@ -637,4 +641,40 @@ footer {
     margin-right: auto;
     display: flex;
     align-items: center;
+}
+
+
+/* For contact only */
+
+.contact-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+form .contact-icon {
+    display: inline-block;
+    font-size: 1.5em;
+    color: white;
+    margin-right: 10px;
+    width: 30px;
+}
+
+form input {
+    padding: 0.4em 0.4em 0.2em;
+    font-size: 1em;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .5) inset;
+    width: 500px;
+}
+
+#message {
+    height: 100px;
+}
+
+form button {
+    background: none;
+    border: none;
+    color: aqua;
+    font-size: 1.5em;
 }

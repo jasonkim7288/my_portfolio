@@ -6,7 +6,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Caveat|Mitr|Kalam|Permanent+Marker|Baloo+Chettan+2|Rubik&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css?family=Caveat|Mitr|Kalam|Permanent+Marker|Baloo+Chettan+2|Rubik&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/5cd3bcc11b.js" crossorigin="anonymous"></script>
     <title>Contact | Jason's Portfolio</title>
@@ -75,67 +76,45 @@
         </div>
     </header>
 
+    <aside>
+        <h1><span id="bg-big-word" class="fade-in-bg-big-word">Mail</span></h1>
+        <h1><span id="bg-mid-word" class="fade-in-bg-mid-word">me</span></h1>
+    </aside>
+
     <!-- About me and skills I have -->
     <main>
         <section class="section-big">
             <article class="article-one-column">
-                <h1>About me</h1>
-                <p>I am a full stack developer who love coding, problem solving, and communicating.</p>
-                <p>I am currently studying web development and agile methodology at Coder Academy. Previousely I had worked at LG Electronics as an IOT software developer and mobile phone software developer.</p>
-                <p>Here is my skills as below. I know there is no such 100% for each skill, so these levels are just relative to each other.</p>
-            </article>
+                <h1>I love to hear from you!</h1>
+                <form action="https://usebasin.com/f/2baf2f29f508" method="POST">
 
-            <article id="skills" class="article-one-column">
-                <div class="skill">
-                    <div class="skill-icon" style="color: #FC490B;">
-                        <img src="res/ruby_logo.svg.png" alt="Ruby logo">
+                    <div class="contact-wrapper">
+                        <div class="contact-icon">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
                     </div>
-                    <div class="progress-bar">
-                        <div class="percent_word" style="width:80%">.</div>
-                        <div class="percent" style="width: 80%"></div>
+                    <div class="contact-wrapper">
+                        <div class="contact-icon">
+                            <i class="fas fa-at"></i>
+                        </div>
+                        <input type="email" id="email" name="email" placeholder="Your email address" required>
                     </div>
-                </div>
-                <div class="skill">
-                    <div class="skill-icon" style="color: red;">
-                        <i class="fab fa-java"></i>
+                    <div class="contact-wrapper">
+                        <div class="contact-icon">
+                            <i class="fas fa-comment-dots"></i>
+                        </div>
+                        <input type="textarea" id="message" name="message" placeholder="Your message" required>
                     </div>
-                    <div class="progress-bar">
-                        <div class="percent_word" style="width: 80%">.</div>
-                        <div class="percent" style="width: 80%"></div>
+                    <div class="btn-wrapper">
+                        <button type="submit">Submit</button>
                     </div>
-                </div>
-                <div class="skill">
-                    <div class="skill-icon" style="color: #FC490B;">
-                        <i class="fab fa-html5"></i>
-                    </div>
-                    <div class="progress-bar">
-                        <div class="percent_word" style="width: 70%">.</div>
-                        <div class="percent" style="width: 70%"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div class="skill-icon" style="color: #2196F3">
-                        <i class="fab fa-css3-alt"></i>
-                    </div>
-                    <div class="progress-bar">
-                        <div class="percent_word" style="width: 70%">.</div>
-                        <div class="percent" style="width: 70%"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div class="skill-icon" style="color: black;">
-                        <i class="fab fa-github"></i>
-                    </div>
-                    <div class="progress-bar">
-                        <div class="percent_word" style="width: 40%">.</div>
-                        <div class="percent" style="width: 40%"></div>
-                    </div>
-                </div>
+                </form>
             </article>
         </section>
     </main>
 
-    <footer class="bg-color flexible-footer">
+    <footer class="bg-color">
         <div class="links">
             <div class="links-icon">
                 <a href="https://github.com/jasonkim7288">
