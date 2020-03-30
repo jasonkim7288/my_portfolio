@@ -8,6 +8,7 @@
     --skill-icon-height: 40px;
     --progressbar-width: 150px;
     --article-max-width: 680px;
+    --bg-color: #333735;
 }
 
 @media screen and (min-width: 576px) {
@@ -90,7 +91,7 @@ a {
 }
 
 .bg-color {
-    background: #333735;
+    background: var(--bg-color);
 }
 
 header {
@@ -645,36 +646,59 @@ footer {
 
 
 /* For contact only */
-
-.contact-wrapper {
+.contact-wrapper, .btn-wrapper{
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    margin: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin-top: 30px;
 }
 
 form .contact-icon {
-    display: inline-block;
-    font-size: 1.5em;
-    color: white;
-    margin-right: 10px;
-    width: 30px;
+    display: none;
 }
 
-form input {
+form input, form textarea {
     padding: 0.4em 0.4em 0.2em;
-    font-size: 1em;
+    font-family: 'Neue Haas Grotesk W01 Disp', Helvetica, sans-serif;
+    font-size: 18px;
     border-radius: 4px;
     box-shadow: 0 1px 2px rgba(0, 0, 0, .5) inset;
-    width: 500px;
+    width: 80vw;    
+}
+
+@media screen and (min-width: 576px) {
+    form input, form textarea {
+        width: min(680px, 70vw);
+    }
+
+    form .contact-icon {
+        display: inline-block;
+        font-size: 1.5em;
+        color: white;
+        margin-right: 10px;
+        width: 30px;
+    }
 }
 
 #message {
     height: 100px;
+    text-align: start;
+    overflow-wrap: break-word;
 }
 
 form button {
-    background: none;
-    border: none;
-    color: aqua;
+    background: var(--color);
+    padding: 6px;
+    color: var(--bg-color);
     font-size: 1.5em;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: flex-end;
 }
