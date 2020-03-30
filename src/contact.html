@@ -6,10 +6,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Caveat|Mitr|Baloo+Chettan+2&display=swap"
+    <link href="https://fonts.googleapis.com/css?family=Caveat|Mitr|Kalam|Permanent+Marker|Baloo+Chettan+2|Rubik&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
-    <title>Home | Jason's Portfolio</title>
+    <script src="https://kit.fontawesome.com/5cd3bcc11b.js" crossorigin="anonymous"></script>
+    <title>Contact | Jason's Portfolio</title>
 </head>
 
 <body class="bg-color">
@@ -24,10 +24,10 @@
                     <a href="index.html">
                         <div class="hover-wrapper" style="width: 37px"></div>
                     </a>
-                    <div class="menu-icon cur-category">
+                    <div class="menu-icon">
                         <i class="fas fa-home"></i>
                     </div>
-                    <a class="string cur-category" href="index.html">Home</a>
+                    <a href="index.html" class="string">Home</a>
                     <div class="painting"></div>
                 </div>
                 <div class="btn-wrapper">
@@ -65,31 +65,77 @@
                     <a href="contact.html">
                         <div class="hover-wrapper" style="width: 49px"></div>
                     </a>
-                    <div class="menu-icon">
+                    <div class="menu-icon cur-category">
                         <i class="far fa-envelope"></i>
                     </div>
-                    <a href="contact.html" class="string">Contact</a>
+                    <a href="contact.html" class="string cur-category">Contact</a>
                     <div class="painting"></div>
                 </div>
             </nav>
         </div>
     </header>
 
-    <aside>
-        <h1><span id="bg-big-word" class="fade-in-bg-big-word">Web</span></h1>
-        <h1><span id="bg-mid-word" class="fade-in-bg-mid-word">Dev.</span></h1>
-    </aside>
-
+    <!-- About me and skills I have -->
     <main>
-        <section>
-            <div id="type-writers">
-                <h1><span class="type-writer type-first">Hi, I am Jason.</span></h1>
-                <h1><span class="type-writer type-second">I am a Full Stack Developer.</span></h1>
-            </div>
+        <section class="section-big">
+            <article class="article-one-column">
+                <h1>About me</h1>
+                <p>I am a full stack developer who love coding, problem solving, and communicating.</p>
+                <p>I am currently studying web development and agile methodology at Coder Academy. Previousely I had worked at LG Electronics as an IOT software developer and mobile phone software developer.</p>
+                <p>Here is my skills as below. I know there is no such 100% for each skill, so these levels are just relative to each other.</p>
+            </article>
+
+            <article id="skills" class="article-one-column">
+                <div class="skill">
+                    <div class="skill-icon" style="color: #FC490B;">
+                        <img src="res/ruby_logo.svg.png" alt="Ruby logo">
+                    </div>
+                    <div class="progress-bar">
+                        <div class="percent_word" style="width:80%">.</div>
+                        <div class="percent" style="width: 80%"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-icon" style="color: red;">
+                        <i class="fab fa-java"></i>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="percent_word" style="width: 80%">.</div>
+                        <div class="percent" style="width: 80%"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-icon" style="color: #FC490B;">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="percent_word" style="width: 70%">.</div>
+                        <div class="percent" style="width: 70%"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-icon" style="color: #2196F3">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="percent_word" style="width: 70%">.</div>
+                        <div class="percent" style="width: 70%"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-icon" style="color: black;">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="percent_word" style="width: 40%">.</div>
+                        <div class="percent" style="width: 40%"></div>
+                    </div>
+                </div>
+            </article>
         </section>
     </main>
 
-    <footer class="bg-color">
+    <footer class="bg-color flexible-footer">
         <div class="links">
             <div class="links-icon">
                 <a href="https://github.com/jasonkim7288">
@@ -121,77 +167,12 @@
             </div>
         </div>
     </footer>
-<!-- 
-    <form id="exp" action="https://mailthis.to/imjungseob.kim@gmail.com" method="POST">
+
+    <!-- <form id="exp" action="https://mailthis.to/imjungseob.kim@gmail.com" method="POST">
         <input type="text" name="name" placeholder="Your name">
         <input type="email" name="_replyto" placeholder="Your email">
         <input type="submit" value="Send">
-    </form>
- -->
-
-    <!-- <section id="skills">
-        <div class="skill">
-            <div class="skill-icon" style="color: #FC490B;">
-                <img src="res/ruby_logo.svg.png" alt="Ruby logo" width=37.5px>
-            </div>
-            <div class="progress-bar">
-                <div class="percent_word" style="width:80%">.</div>
-                <div class="bar-background"></div>
-                <div class="percent" style="width: 80%"></div>
-            </div>
-        </div>
-        <div class="skill">
-            <div class="skill-icon" style="color: red;">
-                <i class="fab fa-java"></i>
-            </div>
-            <div class="progress-bar">
-                <div class="percent_word" style="width: 80%">.</div>
-                <div class="bar-background"></div>
-                <div class="percent" style="width: 80%"></div>
-            </div>
-        </div>
-        <div class="skill">
-            <div class="skill-icon" style="color: #FC490B;">
-                <i class="fab fa-html5"></i>
-            </div>
-            <div class="progress-bar">
-                <div class="percent_word" style="width: 70%">.</div>
-                <div class="bar-background"></div>
-                <div class="percent" style="width: 70%"></div>
-            </div>
-        </div>
-        <div class="skill">
-            <div class="skill-icon" style="color: #2196F3">
-                <i class="fab fa-css3-alt"></i>
-            </div>
-            <div class="progress-bar">
-                <div class="percent_word" style="width: 70%">.</div>
-                <div class="bar-background"></div>
-                <div class="percent" style="width: 70%"></div>
-            </div>
-        </div>
-        <div class="skill">
-            <div class="skill-icon" style="color: red;">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Ruby_on_Rails_logo.svg" alt="Ruby logo"
-                    width=37.5px>
-            </div>
-            <div class="progress-bar">
-                <div class="percent_word" style="width: 40%">.</div>
-                <div class="bar-background"></div>
-                <div class="percent" style="width: 40%"></div>
-            </div>
-        </div>
-        <div class="skill">
-            <div class="skill-icon" style="color: white; font-size: 30px;">
-                <i class="fab fa-aws"></i>
-            </div>
-            <div class="progress-bar">
-                <div class="percent_word" style="width: 20%">.</div>
-                <div class="bar-background"></div>
-                <div class="percent" style="width: 20%"></div>
-            </div>
-        </div>
-    </section> -->
+    </form> -->
 </body>
 
 </html>

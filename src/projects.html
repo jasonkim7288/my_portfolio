@@ -6,10 +6,11 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Caveat|Mitr|Baloo+Chettan+2&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css?family=Caveat|Mitr|Kalam|Permanent+Marker|Baloo+Chettan+2|Rubik&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
-    <title>Home | Jason's Portfolio</title>
+    <script src="https://kit.fontawesome.com/5cd3bcc11b.js" crossorigin="anonymous"></script>
+    <title>Projects | Jason's Portfolio</title>
 </head>
 
 <body class="bg-color">
@@ -24,10 +25,10 @@
                     <a href="index.html">
                         <div class="hover-wrapper" style="width: 37px"></div>
                     </a>
-                    <div class="menu-icon cur-category">
+                    <div class="menu-icon">
                         <i class="fas fa-home"></i>
                     </div>
-                    <a class="string cur-category" href="index.html">Home</a>
+                    <a href="index.html" class="string">Home</a>
                     <div class="painting"></div>
                 </div>
                 <div class="btn-wrapper">
@@ -45,10 +46,10 @@
                     <a href="projects.html">
                         <div class="hover-wrapper" style="width: 51px"></div>
                     </a>
-                    <div class="menu-icon">
+                    <div class="menu-icon cur-category">
                         <i class="fas fa-laptop-code"></i>
                     </div>
-                    <a href="projects.html" class="string">Projects</a>
+                    <a href="projects.html" class="string  cur-category">Projects</a>
                     <div class="painting"></div>
                 </div>
                 <div class="btn-wrapper">
@@ -75,21 +76,63 @@
         </div>
     </header>
 
-    <aside>
-        <h1><span id="bg-big-word" class="fade-in-bg-big-word">Web</span></h1>
-        <h1><span id="bg-mid-word" class="fade-in-bg-mid-word">Dev.</span></h1>
-    </aside>
-
+    <!-- About me and skills I have -->
     <main>
-        <section>
-            <div id="type-writers">
-                <h1><span class="type-writer type-first">Hi, I am Jason.</span></h1>
-                <h1><span class="type-writer type-second">I am a Full Stack Developer.</span></h1>
-            </div>
+        <section class="section-big">
+            <article class="article-one-column">
+                <h1>Resume</h1>
+                <p>Click below icon to download</p>
+                    <a href="res/Jason Kim Resume.pdf">
+                        <div class="links-icon-background to-little-right color-aqua">
+                            <i class="far fa-file"></i>
+                        </div>
+                    </a>
+            </article>
+            <br />
+            <article class="article-one-column">
+                <h1>Project</h1>
+            </article>
+            <article class="article-multi-column">
+                <div class="post">
+                    <h2>Gmail terminal application</h2>
+                    <br />
+                    <img src="res/gmailapp.gif" alt="Gmail application gif">
+                    <br />
+                    <p>Language : Ruby </p>
+                    <p>Gmail application will manage your Gmail account, show the email list after logged in, show the
+                        content of each email, and also let you create a new email with an file attachment. All those
+                        functions can be done with a simple command-line interface (CLI).</p>
+                    <div>
+                        <a href="https://github.com/jasonkim7288/gmail-terminal-app">
+                            <div class="links-icon-background to-left">
+                                <i class="fab fa-github"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="post">
+                    <h2>Accuweather terminal application</h2>
+                    <br />
+                    <img src="res/weatherapp.gif" alt="">
+                    <br />
+                    <p>Language : Ruby </p>
+                    <p>Weather application will display and READ the weather information based on the region you input. Accuweather APIs are utilized for getting GPS coordinates and get the weather information.</p>
+                    <p>Once the user input the city name, candidate cities which have the same name but locate in the different country or state can be listed by using AccuWeather REST Api. Each city information has it's own city id and GPS coordinates.</p>
+                    <p>After getting the city information, you can see the 5 DAY FORECAST of the city by using AccuWeather REST Api.</p>
+                    <div>
+                        <a href="https://github.com/jasonkim7288/weather_terminal_app">
+                            <div class="links-icon-background to-left">
+                                <i class="fab fa-github"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
         </section>
     </main>
 
-    <footer class="bg-color">
+    <footer class="bg-color flexible-footer">
         <div class="links">
             <div class="links-icon">
                 <a href="https://github.com/jasonkim7288">
@@ -121,77 +164,12 @@
             </div>
         </div>
     </footer>
-<!-- 
-    <form id="exp" action="https://mailthis.to/imjungseob.kim@gmail.com" method="POST">
+
+    <!-- <form id="exp" action="https://mailthis.to/imjungseob.kim@gmail.com" method="POST">
         <input type="text" name="name" placeholder="Your name">
         <input type="email" name="_replyto" placeholder="Your email">
         <input type="submit" value="Send">
-    </form>
- -->
-
-    <!-- <section id="skills">
-        <div class="skill">
-            <div class="skill-icon" style="color: #FC490B;">
-                <img src="res/ruby_logo.svg.png" alt="Ruby logo" width=37.5px>
-            </div>
-            <div class="progress-bar">
-                <div class="percent_word" style="width:80%">.</div>
-                <div class="bar-background"></div>
-                <div class="percent" style="width: 80%"></div>
-            </div>
-        </div>
-        <div class="skill">
-            <div class="skill-icon" style="color: red;">
-                <i class="fab fa-java"></i>
-            </div>
-            <div class="progress-bar">
-                <div class="percent_word" style="width: 80%">.</div>
-                <div class="bar-background"></div>
-                <div class="percent" style="width: 80%"></div>
-            </div>
-        </div>
-        <div class="skill">
-            <div class="skill-icon" style="color: #FC490B;">
-                <i class="fab fa-html5"></i>
-            </div>
-            <div class="progress-bar">
-                <div class="percent_word" style="width: 70%">.</div>
-                <div class="bar-background"></div>
-                <div class="percent" style="width: 70%"></div>
-            </div>
-        </div>
-        <div class="skill">
-            <div class="skill-icon" style="color: #2196F3">
-                <i class="fab fa-css3-alt"></i>
-            </div>
-            <div class="progress-bar">
-                <div class="percent_word" style="width: 70%">.</div>
-                <div class="bar-background"></div>
-                <div class="percent" style="width: 70%"></div>
-            </div>
-        </div>
-        <div class="skill">
-            <div class="skill-icon" style="color: red;">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Ruby_on_Rails_logo.svg" alt="Ruby logo"
-                    width=37.5px>
-            </div>
-            <div class="progress-bar">
-                <div class="percent_word" style="width: 40%">.</div>
-                <div class="bar-background"></div>
-                <div class="percent" style="width: 40%"></div>
-            </div>
-        </div>
-        <div class="skill">
-            <div class="skill-icon" style="color: white; font-size: 30px;">
-                <i class="fab fa-aws"></i>
-            </div>
-            <div class="progress-bar">
-                <div class="percent_word" style="width: 20%">.</div>
-                <div class="bar-background"></div>
-                <div class="percent" style="width: 20%"></div>
-            </div>
-        </div>
-    </section> -->
+    </form> -->
 </body>
 
 </html>
