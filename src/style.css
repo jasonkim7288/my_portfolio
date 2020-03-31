@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Baloo+Chettan+2|Caveat|Mitr|Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Caveat|Mitr|Pacifico|Sriracha&display=swap');
 
 :root {
     --header-height: 142px;
@@ -132,7 +132,7 @@ header {
 }
 
 .right-nav {
-    font-family: Pacifico;
+    font-family: Sriracha;
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
@@ -182,7 +182,7 @@ header {
 
 @media screen and (min-width: 576px) {
     .right-nav {
-        font-family: 'Baloo Chettan 2';
+        font-family: Sriracha;
         display: flex;
         justify-content: flex-end;
         align-items: flex-start;
