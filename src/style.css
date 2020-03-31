@@ -232,7 +232,7 @@ header {
 
 /* current menu */
 .cur-category {
-    color: aqua;
+    color: #004cd8;
     font-weight: 900;
 }
 
@@ -512,7 +512,7 @@ article p {
 }
 
 .type-second {
-    color: aqua;
+    color: #004cd8;
     animation: type-writing-second 20s infinite;
     animation-timing-function: steps(25, end);
 }
@@ -553,7 +553,7 @@ article p {
     border-radius: 50%;
     font-size: 25px;
     padding-left: 12px;
-    color: #00cccc;
+    color: #004cd8;
     display: flex;
     align-items: center;
     transform: scale(1);
@@ -566,7 +566,7 @@ article p {
 }
 
 .links-icon-background:hover {
-    background: rgb(91, 116, 187);
+    background: #b3c0e4;
     transform: scale(1.3);
 }
 
@@ -587,7 +587,7 @@ article p {
 }
 
 .color-aqua {
-    color: aqua;
+    color: #004cd8;
 }
 
 #skills {
@@ -784,7 +784,7 @@ form button {
 }
 
 #blog-pages-index .cur-page {
-    color: aqua;
+    color: #004cd8;
     font-weight: 700;
 }
 
