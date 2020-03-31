@@ -292,6 +292,16 @@ aside div {
     animation: bg-midsized-word-effect 3s 1 reverse;
 }
 
+@media screen and (min-width: 576px) {
+    #bg-big-word {
+        font-size: calc(5rem + 20vw);
+    }
+
+    #bg-mid-word {
+        font-size: calc(5rem + 10vw);
+    }
+}
+
 main {
     margin-top: var(--header-height);
     display: flex;
@@ -413,7 +423,7 @@ article p {
 
     10%,
     40% {
-        width: 11.4em;
+        width: 7.0em;
     }
 }
 
@@ -486,8 +496,14 @@ article p {
     position: absolute;
     white-space: nowrap;
     overflow: hidden;
-    font-size: 0.9em;
+    font-size: 0.7em;
     font-weight: normal;
+}
+
+@media screen and (min-width: 576px) {
+    .type-writer {
+        font-size: 0.9em;
+    }
 }
 
 .type-first {
@@ -516,19 +532,15 @@ article p {
     animation-timing-function: steps(1, end);
 }
 
+
+
+
+
 .links-icon {
     margin: 5px;
 }
 
 @media screen and (min-width: 576px) {
-    #bg-big-word {
-        font-size: calc(5rem + 20vw);
-    }
-
-    #bg-mid-word {
-        font-size: calc(5rem + 10vw);
-    }
-
     .links-icon {
         margin: 30px;
     }
