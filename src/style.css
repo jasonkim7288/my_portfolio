@@ -755,8 +755,8 @@ form button {
 
 .blog-main-img {
     margin-top: 30px;
-    width: min(730px, 90vw);
-    height: calc(min(730px, 90vw) / 2);
+    width: min(600px, 90vw);
+    height: calc(min(600px, 90vw) / 2);
     align-self: center;
 }
 
@@ -769,7 +769,6 @@ form button {
     padding: 0.2em;
     font-size: 20px;
     font-weight: 100;
-    transition: all 0.5s 0.1s;
 }
 
 #blog-pages-index .cur-page {
@@ -779,7 +778,7 @@ form button {
 
 #blog-pages-index a:hover {
     color: white;
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 @media screen and (min-width: 576px) {
@@ -788,5 +787,3 @@ form button {
         padding: 0.3em;
     }
 }
-
-
