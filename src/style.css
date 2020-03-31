@@ -109,6 +109,9 @@ header {
 
 .nav-wrapper {
     width: min(1400px, 95vw);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .title-links-wrapper {
@@ -142,7 +145,7 @@ header {
     font-family: 'Baloo Chettan 2';
     display: flex;
     justify-content: space-around;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .btn-wrapper {
@@ -211,7 +214,7 @@ header {
     .string {
         width: 100%;
         padding: 5px;
-        font-size: 1.2em;
+        font-size: 2em;
         color: var(--color);
         text-align: center;
         transition: color 0.5s 0.1s;
@@ -658,30 +661,13 @@ article p {
     animation: progress-bar 5s;
 }
 
-footer {
-    position: fixed;
-    display: flex;
-    bottom: 0px;
-    width: calc(100vw - 20px);
-    height: var(--footer-height);
-    justify-content: center;
-
-}
-
-.flexible-footer {
-    position: relative;
-    background: none;
-}
 
 /* links to github, linkedIn, twitter and facebook*/
 .links {
     height: 100%;
-    margin-left: auto;
-    margin-right: auto;
     display: flex;
     align-items: center;
 }
-
 
 /* For contact only */
 .contact-wrapper,
