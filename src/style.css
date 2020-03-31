@@ -2,7 +2,7 @@
     --header-height: 142px;
     /* --section-max-width: 575px; */
     --footer-height: 60px;
-    --color: #b0c0c2;
+    --color: #637274;
     --skill-icon-font-size: 30px;
     --skill-icon-width: 28px;
     --skill-icon-height: 40px;
@@ -84,7 +84,7 @@
 html {
     font-family: 'Neue Haas Grotesk W01 Disp', Helvetica, sans-serif;
     text-rendering: optimizeLegibility;
-    color: #b0c0c2;
+    color: #637274;
 }
 
 a {
@@ -159,7 +159,7 @@ header {
 }
 
 .hover-wrapper:hover + .menu-icon {
-    color: white;
+    color: black;
 }
 
 .menu-icon {
@@ -219,7 +219,7 @@ header {
     }
 
     .string:hover {
-        color: white;
+        color: black;
         font-weight: 600;
     }
 
@@ -322,7 +322,7 @@ section {
 
 article {
     display: block;
-    color: #b0c0c2;
+    color: #637274;
     font-family: Arial, Helvetica, sans-serif;
     padding: 0 10px;
     margin: 20px 0;
@@ -594,7 +594,7 @@ article p {
     width: fit-content;
     margin-top: 1em;
     padding: 10px;
-    background-color: white;
+    background-color: #ffffff;
     border-radius: 10px;
     opacity: 0.9;
     box-shadow: 0 2px 4px rgba(0, 0, 0, .5) inset;
@@ -732,7 +732,7 @@ form button {
     form .contact-icon {
         display: inline-block;
         font-size: 1.5em;
-        color: white;
+        color: gray;
         margin-right: 10px;
         width: 30px;
     }
@@ -789,7 +789,7 @@ form button {
 }
 
 #blog-pages-index a:hover {
-    color: white;
+    color: black;
     transform: scale(1.1);
 }
 
