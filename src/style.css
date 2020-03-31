@@ -111,6 +111,13 @@ header {
     width: min(1400px, 95vw);
 }
 
+.title-links-wrapper {
+    width: min(1400px, 95vw);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 #main-title {
     display: flex;
     flex-direction: column;
