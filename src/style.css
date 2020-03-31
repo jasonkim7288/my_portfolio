@@ -7,6 +7,7 @@
     --skill-icon-width: 28px;
     --skill-icon-height: 40px;
     --progressbar-width: 150px;
+    --progressbar-width: 60vw;
     --article-max-width: 680px;
     --bg-color: #333735;
 }
@@ -20,7 +21,7 @@
         --skill-icon-font-size: 50px;
         --skill-icon-width: 37.5px;
         --skill-icon-height: 70px;
-        --progressbar-width: 450px;
+        --progressbar-width: min(450px, 60vw);
     }
 }
 
@@ -105,8 +106,7 @@ header {
 }
 
 .nav-wrapper {
-    flex-basis: 1400px;
-    max-width: 1400px;
+    width: min(1400px, 95vw);
 }
 
 #main-title {
@@ -158,7 +158,7 @@ header {
     transform: scale(1.2);
 }
 
-.hover-wrapper:hover+.menu-icon {
+.hover-wrapper:hover + .menu-icon {
     color: white;
 }
 
@@ -299,6 +299,7 @@ main {
 }
 
 section {
+    margin-top: 10px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -314,12 +315,17 @@ article {
     color: #b0c0c2;
     font-family: Arial, Helvetica, sans-serif;
     padding: 0 10px;
+    margin: 20px 0;
     width: 100%;
 }
 
 .article-one-column {
-    max-width: 750px;
-    width: 100%;
+    /* max-width: 750px; */
+    /* width: 100%; */
+    width: min(750px, 95vw);
+    display: flex;
+    flex-direction: column;
+    
 }
 
 .article-multi-column {
@@ -329,22 +335,27 @@ article {
 }
 
 article h1 {
-    font-size: 30px;
+    font-size: 28px;
     font-weight: normal;
+}
+
+
+article p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 1em;
+    font-size: 17px;
+    font-weight: 100;
+    line-height: 1.58;
 }
 
 @media screen and (min-width: 576px) {
     article h1 {
         font-size: 40px;
     }
-}
 
-article p {
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 1em;
-    font-size: 21px;
-    font-weight: 100;
-    line-height: 1.58;
+    article p {
+        font-size: 21px;
+    }
 }
 
 .post {
@@ -353,7 +364,7 @@ article p {
     flex-direction: column;
     align-items: flex-start;
     max-width: 600px;
-    margin: 2em;
+    margin: 0 10px 10px;
     padding: 10px;
     background-color: #535c57;
     border-radius: 10px;
@@ -367,6 +378,7 @@ article p {
 }
 
 .post img {
+    margin-top: 10px;
     align-self: center;
     max-width: 100%;
 }
@@ -536,6 +548,11 @@ article p {
     transition: all 1s;
 }
 
+.behind-header {
+    position: relative;
+    z-index: -1;
+}
+
 .links-icon-background:hover {
     background: rgb(91, 116, 187);
     transform: scale(1.3);
@@ -646,7 +663,8 @@ footer {
 
 
 /* For contact only */
-.contact-wrapper, .btn-wrapper{
+.contact-wrapper,
+.btn-wrapper {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -657,34 +675,23 @@ form {
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 form .contact-icon {
     display: none;
 }
 
-form input, form textarea {
+form input,
+form textarea {
     padding: 0.4em 0.4em 0.2em;
     font-family: 'Neue Haas Grotesk W01 Disp', Helvetica, sans-serif;
     font-size: 18px;
     border-radius: 4px;
     box-shadow: 0 1px 2px rgba(0, 0, 0, .5) inset;
-    width: 80vw;    
-}
-
-@media screen and (min-width: 576px) {
-    form input, form textarea {
-        width: min(680px, 70vw);
-    }
-
-    form .contact-icon {
-        display: inline-block;
-        font-size: 1.5em;
-        color: white;
-        margin-right: 10px;
-        width: 30px;
-    }
+    min-width: 0;
+    width: 95vw;
+    opacity: 0.85;
 }
 
 #message {
@@ -702,3 +709,84 @@ form button {
     cursor: pointer;
     align-self: flex-end;
 }
+
+@media screen and (min-width: 576px) {
+
+    form input,
+    form textarea {
+        width: min(680px, 95vw);
+    }
+
+    form .contact-icon {
+        display: inline-block;
+        font-size: 1.5em;
+        color: white;
+        margin-right: 10px;
+        width: 30px;
+    }
+}
+
+
+.author-info {
+    margin-top: 27px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.author-info img {
+    display: inline-block;
+    border-radius: 50%;
+    height: 48px;
+}
+
+.author-detail {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-content: flex-start;
+}
+
+.author-info h4 {
+    margin-left: 14px;
+    display: inline-block;
+    font-weight: 100;
+    font-size: 0.9em;
+}
+
+.blog-main-img {
+    margin-top: 30px;
+    width: min(730px, 90vw);
+    height: calc(min(730px, 90vw) / 2);
+    align-self: center;
+}
+
+#blog-pages-index {
+    align-self: center;
+}
+#blog-pages-index a, #blog-pages-index label {
+    display: inline-block;
+    color: var(--color);
+    padding: 0.2em;
+    font-size: 20px;
+    font-weight: 100;
+    transition: all 0.5s 0.1s;
+}
+
+#blog-pages-index .cur-page {
+    color: aqua;
+    font-weight: 700;
+}
+
+#blog-pages-index a:hover {
+    color: white;
+    transform: scale(1.2);
+}
+
+@media screen and (min-width: 576px) {
+    #blog-pages-index a, #blog-pages-index label{
+        font-size: 25px;
+        padding: 0.3em;
+    }
+}
+
+
