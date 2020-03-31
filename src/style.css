@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Baloo+Chettan+2|Caveat|Mitr&display=swap');
 
+/* define variables for phone */
 :root {
     --header-height: 142px;
     --footer-height: 60px;
@@ -13,6 +14,7 @@
     --bg-color: #333735;
 }
 
+/* define variable for tablet and desktop */
 @media screen and (min-width: 576px) {
     :root {
         --title-height: 92px;
@@ -26,31 +28,24 @@
     }
 }
 
+/* define animation for background big words effects  */
 @keyframes bg-bigsized-word-effect {
-
-    0%,
-    20% {
+    0%, 20% {
         transform: translateY(100px) scale(0.9);
         opacity: 0;
     }
-
-    70%,
-    100% {
+    70%, 100% {
         transform: translateY(0) scale(1);
         opacity: 1;
     }
 }
 
 @keyframes bg-midsized-word-effect {
-
-    0%,
-    20% {
+    0%, 20% {
         transform: translateX(100px) scale(0.9);
         opacity: 0;
     }
-
-    70%,
-    100% {
+    70%, 100% {
         transform: translateX(0) scale(1);
         opacity: 1;
     }
@@ -58,12 +53,9 @@
 
 /* navbar menu string effect */
 @keyframes menu-effect-string {
-
-    0%,
-    100% {
+    0%, 100% {
         transform: translateY(0);
     }
-
     20% {
         transform: translateY(-10px);
     }
@@ -99,7 +91,7 @@ a {
 header {
     position: fixed;
     top: 0;
-    width: calc(100vw - 20px);
+    width: calc(100vw - 10px);
     display: flex;
     justify-content: center;
     height: var(--header-height);
@@ -148,9 +140,9 @@ header {
 .hover-wrapper {
     position: absolute;
     height: 50px;
+    lef
     background: rgba(255, 255, 255, 0);
     border-radius: 5px;
-    transform: scale(1.2);
     transition: all 1s;
 }
 
@@ -217,6 +209,7 @@ header {
         border-radius: 3px;
         transition: width 0.5s 0.1s;
         transform: translateY(-5px);
+        align-self: flex-start;
     }
 
     .string:hover {
@@ -398,17 +391,9 @@ article p {
     font-size: 1em;
 }
 
-
-
-
-
-
-
-
-
 #type-writers {
     margin-top: 5vh;
-    transform: translateX(-8.2em);
+    transform: translateX(-6.7em);
     font-weight: normal;
     padding: 0 10px;
 }
@@ -416,79 +401,40 @@ article p {
 /* type writer animations that take turns */
 @keyframes type-writing-first {
 
-    0%,
-    50%,
-    100% {
+    0%, 50%, 100% {
         width: 0;
     }
 
-    10%,
-    40% {
+    10%, 40% {
         width: 7.0em;
     }
 }
 
 @keyframes type-writing-second {
 
-    0%,
-    50%,
-    100% {
+    0%, 50%, 100% {
         width: 0;
     }
 
-    60%,
-    90% {
+    60%, 90% {
         width: 13.5em;
     }
 }
 
 @keyframes caret-first {
-
-    0%,
-    12.5%,
-    17.5%,
-    22.5%,
-    27.5%,
-    32.5%,
-    37.5%,
-    50%,
-    100% {
+    0%, 12.5%, 17.5%, 22.5%, 27.5%, 32.5%, 37.5%, 50%, 100% {
         opacity: 0;
     }
-
-    1%,
-    10%,
-    15%,
-    20%,
-    25%,
-    30%,
-    35%,
-    40% {
+    1%, 10%, 15%, 20%, 25%, 30%, 35%, 40% {
         opacity: 1;
     }
 }
 
 @keyframes caret-second {
-
-    0%,
-    62.5%,
-    67.5%,
-    72.5%,
-    77.5%,
-    82.5%,
-    87.5%,
-    100% {
+    0%, 62.5%, 67.5%, 72.5%, 77.5%, 82.5%, 87.5%, 100% {
         opacity: 0;
     }
-
-    50%,
-    60%,
-    65%,
-    70%,
-    75%,
-    80%,
-    85%,
-    90% {
+    50%, 60%, 65%, 70%, 75%, 80%, 85%, 90% {
         opacity: 1;
     }
 }
@@ -502,6 +448,10 @@ article p {
 }
 
 @media screen and (min-width: 576px) {
+    .type-writers {
+        transform: translateX(-8.2em);
+    }
+    
     .type-writer {
         font-size: 0.9em;
     }
@@ -532,10 +482,6 @@ article p {
     animation: caret-second 20s infinite;
     animation-timing-function: steps(1, end);
 }
-
-
-
-
 
 .links-icon {
     margin: 5px;
@@ -674,7 +620,6 @@ footer {
     align-items: center;
 }
 
-
 /* For contact only */
 .contact-wrapper,
 .btn-wrapper {
@@ -695,8 +640,7 @@ form .contact-icon {
     display: none;
 }
 
-form input,
-form textarea {
+form input, form textarea {
     padding: 0.4em 0.4em 0.2em;
     font-family: 'Neue Haas Grotesk W01 Disp', Helvetica, sans-serif;
     font-size: 18px;
@@ -724,9 +668,7 @@ form button {
 }
 
 @media screen and (min-width: 576px) {
-
-    form input,
-    form textarea {
+    form input, form textarea {
         width: min(680px, 95vw);
     }
 
@@ -776,6 +718,7 @@ form button {
 #blog-pages-index {
     align-self: center;
 }
+
 #blog-pages-index a, #blog-pages-index label {
     display: inline-block;
     color: var(--color);
