@@ -9,7 +9,7 @@
     --progressbar-width: 150px;
     --progressbar-width: 60vw;
     --article-max-width: 680px;
-    --bg-color: #333735;
+    --bg-color: white;
 }
 
 @media screen and (min-width: 576px) {
