@@ -335,6 +335,7 @@ article {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-content: flex-start;
 }
 
 article h1 {
@@ -367,7 +368,7 @@ article p {
     flex-direction: column;
     align-items: flex-start;
     max-width: 600px;
-    margin: 0 10px 10px;
+    margin: 0 10px 30px;
     padding: 10px;
     background-color: #535c57;
     border-radius: 10px;
@@ -377,7 +378,6 @@ article p {
 .post h2 {
     align-self: center;
     font-weight: 100;
-
 }
 
 .post img {
@@ -399,22 +399,18 @@ article p {
 
 /* type writer animations that take turns */
 @keyframes type-writing-first {
-
     0%, 50%, 100% {
         width: 0;
     }
-
     10%, 40% {
         width: 7.0em;
     }
 }
 
 @keyframes type-writing-second {
-
     0%, 50%, 100% {
         width: 0;
     }
-
     60%, 90% {
         width: 13.5em;
     }
