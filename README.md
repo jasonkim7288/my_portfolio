@@ -58,9 +58,21 @@ You can send me a message through this page, and see the aesthetic words animati
 [Go back](#table-of-contents)<br /><br /><br />
 
 # Screenshots
-On the mail list screen, there is an option for creating a new email that allow you to send a simple email to anyone.<br />
-Once whom to send, and what the subject is have been submitted, message body part can be written with a html format. You can still use only text except writing "\<br />" to make a new line ('Enter' key is not working).<br />
-There is also a special function that "File attachment" is available if wanted. The file name has to include exact file path.
+### Planning layouts
+for phone (iPhone 8 plus)
+
+![Wireframe for iPhon 8 plus](docs/Figma_iPhone8_plus.png)
+
+for tablet (iPad pro)
+
+![Wireframe for iPad pro](docs/Figma_iPad_pro.png)
+
+for desktop (MacBookAir)
+
+![Wireframe for](docs/Figma_MacBookAir.png)
+
+### Screenshots
+
 
 [Go back](#table-of-contents)<br /><br /><br />
 
