@@ -1,0 +1,87 @@
+#type-writers {
+    margin-top: 5vh;
+    transform: translateX(-6.7em);
+    font-weight: normal;
+    padding: 0 10px;
+}
+
+/* type writer animations that take turns */
+@keyframes type-writing-first {
+    0%, 50%, 100% {
+        width: 0;
+    }
+    10%, 40% {
+        width: 7.0em;
+    }
+}
+
+@keyframes type-writing-second {
+    0%, 50%, 100% {
+        width: 0;
+    }
+    60%, 90% {
+        width: 13.5em;
+    }
+}
+
+@keyframes caret-first {
+    0%, 12.5%, 17.5%, 22.5%, 27.5%, 32.5%, 37.5%, 50%, 100% {
+        opacity: 0;
+    }
+    1%, 10%, 15%, 20%, 25%, 30%, 35%, 40% {
+        opacity: 1;
+    }
+}
+
+@keyframes caret-second {
+    0%, 62.5%, 67.5%, 72.5%, 77.5%, 82.5%, 87.5%, 100% {
+        opacity: 0;
+    }
+    50%, 60%, 65%, 70%, 75%, 80%, 85%, 90% {
+        opacity: 1;
+    }
+}
+
+.type-writer {
+    position: absolute;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 0.7em;
+    font-weight: normal;
+}
+
+@media screen and (min-width: 576px) {
+    .type-writers {
+        transform: translateX(-8.2em);
+    }
+    
+    .type-writer {
+        font-size: 0.9em;
+    }
+}
+
+.type-first {
+    animation: type-writing-first 20s infinite;
+    animation-timing-function: steps(25, end);
+}
+
+.type-second {
+    color: aqua;
+    animation: type-writing-second 20s infinite;
+    animation-timing-function: steps(25, end);
+}
+
+.type-writer::after {
+    content: "|";
+    right: 0;
+}
+
+.type-first::after {
+    animation: caret-first 20s infinite;
+    animation-timing-function: steps(1, end);
+}
+
+.type-second::after {
+    animation: caret-second 20s infinite;
+    animation-timing-function: steps(1, end);
+}

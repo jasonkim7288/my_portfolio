@@ -5,25 +5,28 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../default.css">
+    <link rel="stylesheet" href="../blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+        integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
     <title>Blog | Jason's Portfolio</title>
 </head>
 
 <body class="bg-color">
+    <!-- header and navigation bar -->
     <header class="bg-color">
         <div class="nav-wrapper">
             <div id="main-title">
-                <h1 id="title1">Jason's</h1>
-                <h1 id="title2">Portfolio</h1>
+                <h1 id="title-top">Jason's</h1>
+                <h1 id="title-bottom">Portfolio</h1>
             </div>
             <nav class="right-nav">
                 <div class="btn-wrapper">
                     <a href="../index.html" class="hover-wrapper"></a>
-                    <div class="menu-icon cur-category">
+                    <div class="menu-icon">
                         <i class="fas fa-home"></i>
                     </div>
-                    <a class="string cur-category" href="../index.html">Home</a>
+                    <a href="../index.html" class="menu-string">Home</a>
                     <div class="painting"></div>
                 </div>
                 <div class="btn-wrapper">
@@ -31,7 +34,7 @@
                     <div class="menu-icon">
                         <i class="fas fa-address-card"></i>
                     </div>
-                    <a href="../about.html" class="string">About</a>
+                    <a href="../about.html" class="menu-string">About</a>
                     <div class="painting"></div>
                 </div>
                 <div class="btn-wrapper">
@@ -39,15 +42,15 @@
                     <div class="menu-icon">
                         <i class="fas fa-laptop-code"></i>
                     </div>
-                    <a href="../projects.html" class="string">Projects</a>
+                    <a href="../projects.html" class="menu-string">Projects</a>
                     <div class="painting"></div>
                 </div>
                 <div class="btn-wrapper">
                     <a href="../blog.html" class="hover-wrapper"></a>
-                    <div class="menu-icon">
+                    <div class="menu-icon cur-category">
                         <i class="far fa-newspaper"></i>
                     </div>
-                    <a href="../blog.html" class="string">Blog</a>
+                    <a href="../blog.html" class="menu-string cur-category">Blog</a>
                     <div class="painting"></div>
                 </div>
                 <div class="btn-wrapper">
@@ -55,7 +58,7 @@
                     <div class="menu-icon">
                         <i class="far fa-envelope"></i>
                     </div>
-                    <a href="../contact.html" class="string">Contact</a>
+                    <a href="../contact.html" class="menu-string">Contact</a>
                     <div class="painting"></div>
                 </div>
             </nav>
@@ -64,7 +67,7 @@
 
     <!-- blog main -->
     <main>
-        <section class="section-big">
+        <section>
             <article class="article-one-column">
                 <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
                 <div class="author-info">
@@ -77,8 +80,13 @@
                 <img class="blog-main-img"
                     src="https://images.unsplash.com/photo-1432958576632-8a39f6b97dc7?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
                     alt="main image" />
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas autem corporis, rem earum odio, cum eius sed, magni voluptatum ea sint. Voluptatibus deleniti id quo sapiente itaque nam et repellat! Voluptatibus dignissimos nostrum accusamus excepturi ad perspiciatis, fugit, repellendus eius possimus vero provident nemo temporibus sapiente tempore voluptas adipisci debitis rem et repellat iusto modi quidem. Corrupti perferendis ab quas.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque aliquam nam perspiciatis enim sapiente, distinctio porro repudiandae velit. Aspernatur, possimus?</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas autem corporis, rem earum odio, cum
+                    eius sed, magni voluptatum ea sint. Voluptatibus deleniti id quo sapiente itaque nam et repellat!
+                    Voluptatibus dignissimos nostrum accusamus excepturi ad perspiciatis, fugit, repellendus eius
+                    possimus vero provident nemo temporibus sapiente tempore voluptas adipisci debitis rem et repellat
+                    iusto modi quidem. Corrupti perferendis ab quas.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque aliquam nam perspiciatis enim
+                    sapiente, distinctio porro repudiandae velit. Aspernatur, possimus?</p>
             </article>
             <div id="blog-pages-index">
                 <h2>&lt;
@@ -93,37 +101,21 @@
         </section>
     </main>
 
-    <footer class="bg-color flexible-footer">
-        <div class="links">
-            <div class="links-icon">
-                <a href="https://github.com/jasonkim7288">
-                    <div class="links-icon-background to-left">
-                        <i class="fab fa-github"></i>
-                    </div>
-                </a>
-            </div>
-            <div class="links-icon">
-                <a href="https://www.linkedin.com/in/im-jasonkim">
-                    <div class="links-icon-background">
-                        <i class="fab fa-linkedin"></i>
-                    </div>
-                </a>
-            </div>
-            <div class="links-icon">
-                <a href="https://twitter.com/jasonkim7288">
-                    <div class="links-icon-background">
-                        <i class="fab fa-twitter"></i>
-                    </div>
-                </a>
-            </div>
-            <div class="links-icon">
-                <a href="https://www.facebook.com/profile.php?id=100003947625728">
-                    <div class="links-icon-background to-right">
-                        <i class="fab fa-facebook-f"></i>
-                    </div>
-                </a>
-            </div>
-        </div>
+    <!-- links to github, linkedIn, twitter and facebook -->
+    <footer class="flexible-footer">
+        <a href="https://github.com/jasonkim7288" class="links-icon links-icon-background to-left">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/im-jasonkim" class="links-icon links-icon-background">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://twitter.com/jasonkim7288" class="links-icon links-icon-background">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=100003947625728"
+            class="links-icon links-icon-background to-right">
+            <i class="fab fa-facebook-f"></i>
+        </a>
     </footer>
 </body>
 
