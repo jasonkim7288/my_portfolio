@@ -27,8 +27,10 @@ Jason's portfolio is my professional portfolio website to show off my project an
 
 # Functionality and Features
 
-Gmail application is able to manage the Gmail account. Once you log in with your existing Gmail account, the application automatically store the account name into a file and show the account name list after next log-in.<br />
-If the account you logged in is not supposed to be stored, there is a command for deleting the account which is just removing the account name from the local file not removing the real Gmail account from the server.<br /> 
+This website is fully responisve from mobile to desktop, and there are aesthetic words animation at the background of the landing page and the contact page. <br /> 
+
+### Main menu
+On the phone sized menu, the menu string becoms even smaller, but the menu icon 
 
 # Sitemap
 Once Gmail application succeeds in log-in, it will display the current account name logged in, the current label of the mailbox, an email list, and the current page of the mailbox.<br />
@@ -63,116 +65,3 @@ This Gmail program uses IMAP(Internet Message Access Protocol), so it will be mu
 
 ![JasonKim_T1A2_diagram.png](docs/JasonKim_T1A2_diagram.png)
 </details>
-
-
-## Pseudo code
-```
-Begin
-    loop1:
-        read google account id list from file
-        print app title
-        print account list
-        input choice for account list
-        if select "log in with an existing account"
-            input password
-        else if select "log in with a new account"
-            input id
-            input password
-        else if select "remove an account"
-            remove the existing account
-            goto loop1
-        else if select "exit"
-            exit
-        else
-            goto loop1
-        end if
-
-        log in
-        if is log in succeed
-    loop2:
-            load mail list
-        else
-            goto loop1
-            print app title
-            print mail list
-            input choice for mail list
-            if select "change label"
-                change the label
-        end if
-    
-
-End
-```
-
-[Go back](#table-of-contents)<br /><br /><br />
-
-# R9 - Implementation plan
-## Outlines
-![trello start](docs/Trello_start.png)
-## Project management
-Platform : Trello<br />
-Project board : [http://trello.com/b/87EDzcri/jasonkimt1a2](http://trello.com/b/87EDzcri/jasonkimt1a2)
-
-[Go back](#table-of-contents)<br /><br /><br />
-
-# R10 - Installation guide and requirement
-## Get started
-* This installation guide is for Mac users
-1. Your google account MUST less secure app access as follows through the browser.<br />
-go to Google account -> Select "Manage your Google Account" -> Select "Security" -> Select "Turn on access(not recommended)" in "Less secure app access" -> Turn on "Allow less secure apps: "
-
-<details>
-<summary>
-<strong>Click for the detailed steps</strong>
-</summary>
-
-![Step 1](docs/GmailAccountSecuritySetting_1.png)
-![Step 2](docs/GmailAccountSecuritySetting_2.png)
-![Step 3](docs/GmailAccountSecuritySetting_3.png)
-![Step 4](docs/GmailAccountSecuritySetting_4.png)
-![Step 5](docs/GmailAccountSecuritySetting_5.png)
-</details>
-
-2. If you don't have Ruby installed, you can download it and follow the installation instructions available [here](https://www.ruby-lang.org/en/documentation/installation/).
-
-3. If you don't have bunlder gem, run as below
-```
-gem install bundler
-```
-
-4. Unzip the submission zip file to your home directory
-
-5. Change your working directory to the project source directory
-```
-[~]$ cd ~/JasonKim_T1A2/src
-```
-6. Just in case of the failure of running './run_gmail.sh', you need to install Homebrew and run the command as below
-```
-[~/JasonKim_T1A2/src]$ brew install icu4c
-```
-7. Run the script for Gmail application
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 7-1. Run the default script
-```
-[~/JasonKim_T1A2/src]$ ./run_gmail.sh
-```
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 7-2. If you want to EXPOSE your gmail account and password to the author for fun, run the script as below
-```
-[~/JasonKim_T1A2/src]$ ./run_gmail.sh -f
-```
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 7-3. If you want to change the number of rows of the mail list, run the scripts as below. The number should be between 1 and 50
-```
-[~/JasonKim_T1A2/src]$ ./run_gmail.sh -n 20
-```
-## Dependencies
-### Gems required
-- gmail
-- html_massage
-- tty-table
-- tty-prompt
-- tty-font
-- pastel
-- colorize
-- test-unit
-
-[Go back](#table-of-contents)<br /><br /><br />
