@@ -13,11 +13,11 @@ form {
     margin-top: 20px;
 }
 
-form .contact-icon {
+.contact-icon {
     display: none;
 }
 
-form input, form textarea {
+input, textarea {
     padding: 0.4em 0.4em 0.2em;
     font-family: 'Neue Haas Grotesk W01 Disp', Helvetica, sans-serif;
     font-size: 18px;
@@ -45,11 +45,11 @@ form button {
 }
 
 @media screen and (min-width: 576px) {
-    form input, form textarea {
+    input, textarea {
         width: min(680px, 95vw);
     }
 
-    form .contact-icon {
+    .contact-icon {
         display: inline-block;
         font-size: 1.5em;
         color: white;
