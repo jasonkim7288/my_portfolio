@@ -4,14 +4,16 @@
 :root {
     --header-height: 142px;
     --footer-height: 60px;
-    --default-text-color: #b0c0c2;
+    --default-text-color: #f8eeee;
     --skill-icon-font-size: 30px;
     --skill-icon-width: 28px;
     --skill-icon-height: 40px;
     --progressbar-width: 150px;
     --progressbar-width: 60vw;
     --article-max-width: 680px;
-    --bg-color: #333735;
+    --bg-color: #171b19;
+    --selected-color: #DBFF76;
+    --icon-background-color: #DEC1FF;
 }
 
 /* define variable for tablet and desktop */
@@ -74,6 +76,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: var(--default-text-color);
 }
 
 header {
@@ -113,7 +116,6 @@ header {
 #title-bottom {
     font-family: Mitr;
     font-size: 50px;
-    color: #0a8672;
     margin-bottom: -10px;
 }
 
@@ -140,13 +142,12 @@ header {
     position: absolute;
     width: 40px;
     height: 45px;
-    background: #ffffff00;
     border-radius: 5px;
     transition: all 0.5s;
 }
 
 .hover-wrapper:hover {
-    background: #ffffff33;
+    background: #EF835433;
     transform: translateY(-3px) scale(1.1);
 }
 
@@ -211,7 +212,7 @@ header {
     }
 
     .menu-string:hover {
-        color: white;
+        color: var(--default-text-color);
         font-weight: 600;
     }
 
@@ -224,7 +225,7 @@ header {
 
 /* make current menu look different*/
 .cur-category {
-    color: aqua;
+    color: var(--selected-color);
     font-weight: 900;
 }
 
@@ -327,7 +328,7 @@ footer {
     border-radius: 50%;
     font-size: 25px;
     padding-left: 12px;
-    color: #00cccc;
+    color: var(--icon-background-color);
     display: flex;
     align-items: center;
     transform: scale(1);
@@ -361,6 +362,6 @@ footer {
 }
 
 .color-aqua {
-    color: aqua;
+    color: var(--selected-color);
 }
 

@@ -46,7 +46,7 @@ aside div {
 
 #bg-big-word {
     font-size: calc(5rem + 10vw);
-    color: #A1A48C;
+    color: #C9A5DA;
     margin-left: -0.16em;
     align-self: flex-end;
     grid-area: 2 / 1 / 3 / 3;

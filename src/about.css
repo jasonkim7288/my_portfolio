@@ -2,7 +2,7 @@
     width: fit-content;
     margin-top: 1em;
     padding: 10px;
-    background-color: white;
+    background-color: var(--default-text-color);;
     border-radius: 10px;
     opacity: 0.9;
     box-shadow: 0 2px 4px rgba(0, 0, 0, .5) inset;
@@ -40,7 +40,7 @@
     display: inline-block;
     position: relative;
     width: var(--progressbar-width);
-    color: white;
+    color: var(--default-text-color);;
     text-align: end;
     background-image: url("res/walk.gif");
     background-size: contain;

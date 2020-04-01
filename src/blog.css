@@ -43,12 +43,12 @@
 }
 
 #blog-pages-index .cur-page {
-    color: aqua;
+    color: var(--selected-color);
     font-weight: 700;
 }
 
 #blog-pages-index a:hover {
-    color: white;
+    color: var(--default-text-color);;
     transform: scale(1.1);
 }
 

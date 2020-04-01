@@ -66,7 +66,7 @@
 }
 
 .type-second {
-    color: aqua;
+    color: var(--icon-background-color);
     animation: type-writing-second 20s infinite;
     animation-timing-function: steps(25, end);
 }

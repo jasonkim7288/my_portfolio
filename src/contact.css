@@ -52,7 +52,7 @@ form button {
     .contact-icon {
         display: inline-block;
         font-size: 1.5em;
-        color: white;
+        color: var(--default-text-color);;
         margin-right: 10px;
         width: 30px;
     }
