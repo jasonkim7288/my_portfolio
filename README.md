@@ -4,7 +4,7 @@
 # Table of Contents
 * [Links](#Links)
 * [Purpose](#Purpose)
-* [Features](#Features)
+* [Functionality and Features](#Functionality-and-Features)
 * [Sitemap](#Sitemap)
 * [Screenshots](#Screenshots)
 * [Target audience](#Target-audience)
@@ -50,8 +50,12 @@ Starting with the first blog page, you can navigate 5 blog pages and switch over
 ### Contact page
 You can send me a message through this page, and see the aesthetic words animation here as well. Once submiteed, the message is automatically sent to my email address and 'usebasin.com' submissions management service.
 
+[Go back](#table-of-contents)<br /><br /><br />
+
 # Sitemap
 ![Sitemap](docs/sitemap.png)
+
+[Go back](#table-of-contents)<br /><br /><br />
 
 # Screenshots
 On the mail list screen, there is an option for creating a new email that allow you to send a simple email to anyone.<br />
@@ -61,23 +65,12 @@ There is also a special function that "File attachment" is available if wanted. 
 [Go back](#table-of-contents)<br /><br /><br />
 
 # Target audience
-
-## User interacion
-When started, navigate the menu as below
-
-![Decision tree](docs/DecisionTree_JasonKim_T1A2.png)
-
-## User experience
-This Gmail program uses IMAP(Internet Message Access Protocol), so it will be much slower than the original Gmail app using [Google's official Gmail API Ruby Client](https://developers.google.com/gmail/api/quickstart/ruby).
+The target audience for my portfolio website is potential employers. This website allows them to see an overview of everything I have done so far and helps them to find many ways to contact me.
 
 [Go back](#table-of-contents)<br /><br /><br />
 
 # Tech stack
-## Flowchart
-<details>
-<summary>
-<strong>Click for the flowchart</strong>
-</summary>
 
-![JasonKim_T1A2_diagram.png](docs/JasonKim_T1A2_diagram.png)
-</details>
+
+
+[Go back](#table-of-contents)<br /><br /><br />
