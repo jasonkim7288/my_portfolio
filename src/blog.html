@@ -8,61 +8,60 @@
     <link rel="stylesheet" href="default.css">
     <link rel="stylesheet" href="blog.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
-        integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    integrity="sha512-L7MWcK7FNPcwNqnLdZq86lTHYLdQqZaz5YcAgE+5cnGmlw8JT03QB2+oxL100UeB6RlzZLUxCGSS4/++mNZdxw== sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous" />
     <title>Blog | Jason's Portfolio</title>
 </head>
 
 <body class="bg-color">
-    <!-- header and navigation bar -->
+    <!-- main title and navigation bar -->
     <header class="bg-color">
-        <div class="nav-wrapper">
-            <div id="main-title">
-                <h1 id="title-top">Jason's</h1>
-                <h1 id="title-bottom">Portfolio</h1>
+        <!-- main title -->
+        <h1 id="title-top">Jason's</h1>
+        <h1 id="title-bottom">Portfolio</h1>
+
+        <!-- menu icon only appears on small window and underscore only appears on large window-->
+        <nav class="right-nav">
+            <div class="btn-wrapper">
+                <a href="index.html" class="hover-wrapper"></a>
+                <div class="menu-icon">
+                    <i class="fas fa-home"></i>
+                </div>
+                <a href="index.html" class="menu-string">Home</a>
+                <div class="underscore"></div>
             </div>
-            <nav class="right-nav">
-                <div class="btn-wrapper">
-                    <a href="index.html" class="hover-wrapper"></a>
-                    <div class="menu-icon">
-                        <i class="fas fa-home"></i>
-                    </div>
-                    <a href="index.html" class="menu-string">Home</a>
-                    <div class="painting"></div>
+            <div class="btn-wrapper">
+                <a href="about.html" class="hover-wrapper"></a>
+                <div class="menu-icon">
+                    <i class="fas fa-address-card"></i>
                 </div>
-                <div class="btn-wrapper">
-                    <a href="about.html" class="hover-wrapper"></a>
-                    <div class="menu-icon">
-                        <i class="fas fa-address-card"></i>
-                    </div>
-                    <a href="about.html" class="menu-string">About</a>
-                    <div class="painting"></div>
+                <a href="about.html" class="menu-string">About</a>
+                <div class="underscore"></div>
+            </div>
+            <div class="btn-wrapper">
+                <a href="projects.html" class="hover-wrapper"></a>
+                <div class="menu-icon">
+                    <i class="fas fa-laptop-code"></i>
                 </div>
-                <div class="btn-wrapper">
-                    <a href="projects.html" class="hover-wrapper"></a>
-                    <div class="menu-icon">
-                        <i class="fas fa-laptop-code"></i>
-                    </div>
-                    <a href="projects.html" class="menu-string">Projects</a>
-                    <div class="painting"></div>
+                <a href="projects.html" class="menu-string">Projects</a>
+                <div class="underscore"></div>
+            </div>
+            <div class="btn-wrapper">
+                <a href="blog.html" class="hover-wrapper"></a>
+                <div class="menu-icon cur-category">
+                    <i class="far fa-newspaper"></i>
                 </div>
-                <div class="btn-wrapper">
-                    <a href="blog.html" class="hover-wrapper"></a>
-                    <div class="menu-icon cur-category">
-                        <i class="far fa-newspaper"></i>
-                    </div>
-                    <a href="blog.html" class="menu-string cur-category">Blog</a>
-                    <div class="painting"></div>
+                <a href="blog.html" class="menu-string cur-category">Blog</a>
+                <div class="underscore"></div>
+            </div>
+            <div class="btn-wrapper">
+                <a href="contact.html" class="hover-wrapper"></a>
+                <div class="menu-icon">
+                    <i class="far fa-envelope"></i>
                 </div>
-                <div class="btn-wrapper">
-                    <a href="contact.html" class="hover-wrapper"></a>
-                    <div class="menu-icon">
-                        <i class="far fa-envelope"></i>
-                    </div>
-                    <a href="contact.html" class="menu-string">Contact</a>
-                    <div class="painting"></div>
-                </div>
-            </nav>
-        </div>
+                <a href="contact.html" class="menu-string">Contact</a>
+                <div class="underscore"></div>
+            </div>
+        </nav>
     </header>
 
     <!-- blog main -->
