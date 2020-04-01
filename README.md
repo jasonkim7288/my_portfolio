@@ -1,4 +1,4 @@
-<h1 align="center"> My Portfolio
+<h1 align="center"> Jason's Portfolio
 </h1>
 
 # Table of Contents
@@ -21,14 +21,12 @@ GitHub repository :  https://github.com/jasonkim7288/my_portfolio<br /><br />
 [Go back](#table-of-contents)<br /><br /><br />
 
 # Purpose
-Gmail application will manage your Gmail account, show the email list after logged in, show the content of each email, and also let you create a new email with an file attachment. All those functions can be done with a simple command-line interface (CLI).<br />
-Users can access their Gmail accounts and check the email without any browser and even send a simple email with a file attached. It will be a good idea to use this Gmail application if you are a computer server manager which has only command line UNIX environment or if your browser has been infected by any serious virus so you cannot use it.<br />
-Once a simple security setting is changed, it is free to access Gmail anytime on command prompt.<br />
+Jason's portfolio is my professional portfolio website to show off my project and skills to the potential employers. This website also contains blog posts I made and will be continuously maintained. For anyone who visit my website, there is a way how to contact me.<br />
 
 [Go back](#table-of-contents)<br /><br /><br />
 
-# Features
-## Manage Gmail account
+# Functionality and Features
+
 Gmail application is able to manage the Gmail account. Once you log in with your existing Gmail account, the application automatically store the account name into a file and show the account name list after next log-in.<br />
 If the account you logged in is not supposed to be stored, there is a command for deleting the account which is just removing the account name from the local file not removing the real Gmail account from the server.<br /> 
 
