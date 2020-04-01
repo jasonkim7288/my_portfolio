@@ -21,7 +21,7 @@ GitHub repository :  https://github.com/jasonkim7288/my_portfolio<br /><br />
 [Go back](#table-of-contents)<br /><br /><br />
 
 # Purpose
-Jason's portfolio is my professional portfolio website to show off my project and skills to the potential employers. This website also contains blog posts I made and will be continuously maintained. For anyone who visit my website, there is a way how to contact me.<br />
+Jason's portfolio is my professional portfolio website to show off my projects and skills to the potential employers. This website also contains blog posts I made and will be continuously maintained. For anyone who visit my website, there is a way how to contact me.<br />
 
 [Go back](#table-of-contents)<br /><br /><br />
 
@@ -30,12 +30,28 @@ Jason's portfolio is my professional portfolio website to show off my project an
 This website is fully responisve from mobile to desktop, and there are aesthetic words animation at the background of the landing page and the contact page. <br /> 
 
 ### Main menu
-On the phone sized menu, the menu string becoms even smaller, but the menu icon 
+For the phone sized screen, the menu list string becomes even smaller, but the menu icons appear to select the menu easily. If the screen is bigger than the phone size, the menu icons will be removed and the menu list string will be bigger.
+
+### Linked icons
+There are always 4 icons at the bottom of the all pages which are linked to GitHub, LinkedIn, Twitter, and Facebook.
+
+### Landing page
+The pure css type writing effect has been applied to introduce about who I am, and also two big meaningful words animation fades in.
+
+### About page
+About page is an introduction about me, and shows what I am capable of as a full stack developer.
+
+### Projects page
+Firstly, there is a link to download my resume pdf file, and then my latest projects' detailed information is posted.
+
+### Blog page
+Starting with the first blog page, you can navigate 5 blog pages and switch over to any other menu at any time.
+
+### Contact page
+You can send me a message through this page, and see the aesthetic words animation here as well. Once submiteed, the message is automatically sent to my email address and 'usebasin.com' submissions management service.
 
 # Sitemap
-Once Gmail application succeeds in log-in, it will display the current account name logged in, the current label of the mailbox, an email list, and the current page of the mailbox.<br />
-Every label is from Gmail server, so you can see the exact same label from browser, and default label of the mailbox is "INBOX". Each labeled mailbox has an email list showing email number, sender, subject and a little bit of body.<br />
-You can navigate each label of the mailbox and the pages if there are more than 7 mails in the mailbox. If there is an email that interests you, "View the mail" will display the detailed content.<br />
+![Sitemap](docs/sitemap.png)
 
 # Screenshots
 On the mail list screen, there is an option for creating a new email that allow you to send a simple email to anyone.<br />

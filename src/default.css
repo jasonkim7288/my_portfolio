@@ -4,6 +4,7 @@
 :root {
     --header-height: 142px;
     --footer-height: 60px;
+    --screen-width: calc(100vw - 17px);
     --default-text-color: #f8eeee;
     --skill-icon-font-size: 30px;
     --skill-icon-width: 28px;
@@ -71,7 +72,7 @@ a {
 }
 
 body {
-    width: calc(100vw - (100vw - 100%));
+    width: var(--screen-width);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -79,23 +80,18 @@ body {
     color: var(--default-text-color);
 }
 
+/* limit header width maximum 1400px */
 header {
     position: fixed;
     top: 0;
-    /* width: calc(100vw - 10px); */
     display: flex;
     justify-content: center;
     height: var(--header-height);
     background-attachment: fixed;
-
-    width: min(1000px, 95vw);
+    width: min(var(--section-max-width), 95vw);
     align-items: center;
     flex-direction: column;
-}
-
-/* limit header width maximum 1400px */
-.nav-wrapper {
-    /* width: min(1400px, 95vw); */
+    z-index: 100;
 }
 
 #main-title {
@@ -295,7 +291,7 @@ footer {
     position: fixed;
     display: flex;
     bottom: 0px;
-    width: calc(100vw - 20px);
+    width: var(--screen-width);
     height: var(--footer-height);
     justify-content: center;
     align-items: center;
@@ -335,13 +331,8 @@ footer {
     transition: all 1s;
 }
 
-.behind-header {
-    position: relative;
-    z-index: -1;
-}
-
 .links-icon-background:hover {
-    background: rgb(91, 116, 187);
+    background: #5b74bb;
     transform: scale(1.3);
 }
 

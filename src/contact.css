@@ -1,9 +1,13 @@
 /* For contact only */
-.contact-wrapper, .btn-wrapper {
+.contact-wrapper {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     margin: 5px;
+}
+
+.contact-btn {
+    flex-direction: column;
 }
 
 form {
@@ -35,7 +39,7 @@ input, textarea {
 }
 
 form button {
-    background: var(--default-text-color);;
+    background: #58FCEC;
     padding: 6px;
     color: var(--bg-color);
     font-size: 1.5em;
