@@ -105,8 +105,6 @@ Tablet screenshots are almost same as desktop screenshots except there is only o
 ![Blog for desktop](/docs/screenshot_desktop_blog.png)
 ![Contact for desktop](/docs/screenshot_desktop_contact.png)
 
-
-
 [Go back](#table-of-contents)<br /><br /><br />
 
 # Target audience
@@ -117,6 +115,15 @@ The target audience for my portfolio website is potential employers. This websit
 
 # Tech stack
 
-
+- Html : Main structure and content
+- CSS : Styling, animations & responsiveness
+- Fontawesome : Icons
+- Googlefonts : Fonts
+- Github : Source control
+- Github.io : Deployment of main portfolio website
+- AWS S3 bucket : Deployment of white theme portfolio website
+- Draw.io : Sitemap
+- Figma : Wireframe
+- checkmycolours.com : Accessibility check
 
 [Go back](#table-of-contents)<br /><br /><br />
