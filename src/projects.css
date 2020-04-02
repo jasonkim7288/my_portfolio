@@ -1,3 +1,4 @@
+/* there could be one or two posts in a row based on the screen size */
 .post {
     display: flex;
     justify-content: start;
@@ -11,17 +12,20 @@
     box-shadow: 0 4px 4px rgba(0, 0, 0, .5) inset;
 }
 
+/* post title */
 .post h2 {
     align-self: center;
     font-weight: 100;
 }
 
+/* post image */
 .post img {
     margin-top: 10px;
     align-self: center;
     max-width: 100%;
 }
 
+/* post content */
 .post p {
     font-size: 1em;
 }

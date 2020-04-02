@@ -1,3 +1,4 @@
+/* type writing anmations wrapper */
 #type-writers {
     margin-top: 5vh;
     transform: translateX(-6.7em);
@@ -5,7 +6,7 @@
     padding: 0 10px;
 }
 
-/* type writer animations that take turns */
+/* type writer animations that take turns and displayed firstly */
 @keyframes type-writing-first {
     0%, 50%, 100% {
         width: 0;
@@ -15,6 +16,7 @@
     }
 }
 
+/* type writer animations that take turns and displayed secondly */
 @keyframes type-writing-second {
     0%, 50%, 100% {
         width: 0;
@@ -24,6 +26,7 @@
     }
 }
 
+/* caret animation following the end of the string and displayed firstly */
 @keyframes caret-first {
     0%, 12.5%, 17.5%, 22.5%, 27.5%, 32.5%, 37.5%, 50%, 100% {
         opacity: 0;
@@ -33,6 +36,7 @@
     }
 }
 
+/* caret animation following the end of the string and displayed secondly */
 @keyframes caret-second {
     0%, 62.5%, 67.5%, 72.5%, 77.5%, 82.5%, 87.5%, 100% {
         opacity: 0;
@@ -42,6 +46,7 @@
     }
 }
 
+/* string for the type writing animation */
 .type-writer {
     position: absolute;
     white-space: nowrap;
@@ -50,6 +55,7 @@
     font-weight: normal;
 }
 
+/* adjust string location and font size for big screen */
 @media screen and (min-width: 576px) {
     .type-writers {
         transform: translateX(-8.2em);
@@ -60,27 +66,32 @@
     }
 }
 
+/* string animation for 20sec but not doing anything for last 10sec */
 .type-first {
     animation: type-writing-first 20s infinite;
     animation-timing-function: steps(25, end);
 }
 
+/* string animation for 20sec but not doing anything for first 10sec */
 .type-second {
     color: var(--icon-background-color);
     animation: type-writing-second 20s infinite;
     animation-timing-function: steps(25, end);
 }
 
+/* caret character */
 .type-writer::after {
     content: "|";
     right: 0;
 }
 
+/* caret animation for 20sec but not doing anything for last 10sec */
 .type-first::after {
     animation: caret-first 20s infinite;
     animation-timing-function: steps(1, end);
 }
 
+/* caret animation for 20sec but not doing anything for first 10sec */
 .type-second::after {
     animation: caret-second 20s infinite;
     animation-timing-function: steps(1, end);

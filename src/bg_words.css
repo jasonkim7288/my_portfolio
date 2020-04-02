@@ -10,6 +10,7 @@
     }
 }
 
+/* define animation for background mid words effects  */
 @keyframes bg-midsized-word-effect {
     0%, 20% {
         transform: translateX(100px) scale(0.9);
@@ -55,11 +56,6 @@ aside div {
     animation: bg-bigsized-word-effect 5s 1;
 }
 
-.fade-out-bg-big-word {
-    opacity: 0;
-    animation: bg-bigsized-word-effect 3s 1 reverse;
-}
-
 #bg-mid-word {
     font-size: calc(5rem + 5vw);
     color: #E5E1D5;
@@ -72,11 +68,7 @@ aside div {
     animation: bg-midsized-word-effect 5s 1;
 }
 
-.fade-out-bg-mid-word {
-    opacity: 0;
-    animation: bg-midsized-word-effect 3s 1 reverse;
-}
-
+/* bigger font-size for bigger screen */
 @media screen and (min-width: 576px) {
     #bg-big-word {
         font-size: calc(5rem + 20vw);

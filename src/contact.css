@@ -1,4 +1,4 @@
-/* For contact only */
+/* wrapping contact icon and input area */
 .contact-wrapper {
     display: flex;
     justify-content: flex-start;
@@ -6,22 +6,25 @@
     margin: 5px;
 }
 
+/* contact icons like name, email, message icons */
 .contact-btn {
     flex-direction: column;
 }
 
+/* form for seding message */
 form {
     display: flex;
     flex-direction: column;
     align-items: stretch;
     margin-top: 20px;
-
 }
 
+/* remove the contact icon if the screen size is small */
 .contact-icon {
     display: none;
 }
 
+/* message information attributes */
 input, textarea {
     padding: 0.4em 0.4em 0.2em;
     font-family: 'Neue Haas Grotesk W01 Disp', Helvetica, sans-serif;
@@ -33,12 +36,14 @@ input, textarea {
     opacity: 0.85;
 }
 
+/* message should be larger */
 #message {
     height: 100px;
     text-align: start;
     overflow-wrap: break-word;
 }
 
+/* submit button attributes */
 form button {
     background: #58FCEC;
     padding: 6px;
@@ -49,6 +54,7 @@ form button {
     align-self: flex-end;
 }
 
+/* larger input and text area for larger screen */
 @media screen and (min-width: 576px) {
     input, textarea {
         width: min(680px, 95vw);
