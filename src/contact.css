@@ -52,6 +52,7 @@ form button {
     border-radius: 5px;
     cursor: pointer;
     align-self: flex-end;
+    z-index: 50;
 }
 
 /* larger input and text area for larger screen */
