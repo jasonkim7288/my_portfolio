@@ -29,8 +29,9 @@ aside {
     top: var(--header-height);
     display: grid;
     grid-template-columns: minmax(10vw, 30vw) max-content;
-    grid-template-rows: 1fr min-content 2em;
+    grid-template-rows: 1fr min-content 2em var(--footer-height);
     height: calc(100vh - var(--header-height) - var(--footer-height));
+    z-index: -1;
 }
 
 aside h2 {
@@ -61,7 +62,7 @@ aside div {
     color: #E5E1D5;
     margin-left: -0.07em;
     align-self: flex-end;
-    grid-area: 2 / 2 / -1 / -1;
+    grid-area: 2 / 2 / 4 / -1;
 }
 
 .fade-in-bg-mid-word {
