@@ -33,7 +33,7 @@ aside {
     height: calc(100vh - var(--header-height) - var(--footer-height));
 }
 
-aside h1 {
+aside h2 {
     letter-spacing: -0.04em;
     display: contents;
 }
