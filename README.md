@@ -94,7 +94,7 @@ for desktop
 
 #### Tablet screenshots (iPad pro)
 
-Tablet screenshots are almost same as desktop screenshots except there is only one project post per row. (desktop can have one to many different from screen size)
+Tablet screenshots are almost same as desktop screenshots except there is only one project post per row. (desktop can have one to two based on it's screen size)
 ![Projects for tablet](/docs/screenshot_tablet_projects.png)
 
 #### Desktop screenshots
