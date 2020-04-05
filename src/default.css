@@ -229,7 +229,7 @@ main {
     justify-content: center;
 }
 
-section {
+.section {
     margin-top: 10px;
     display: flex;
     justify-content: center;
@@ -261,7 +261,7 @@ article {
     align-content: flex-start;
 }
 
-article h1 {
+article h3 {
     font-size: 28px;
     font-weight: normal;
 }
@@ -275,7 +275,7 @@ article p {
 }
 
 @media screen and (min-width: 576px) {
-    article h1 {
+    article h3 {
         font-size: 40px;
     }
 
